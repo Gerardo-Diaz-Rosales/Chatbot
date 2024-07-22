@@ -1,0 +1,40 @@
+2024/07/22-10:41:47.753 1038 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/22-10:41:47.759 1038 Recovering log #417
+2024/07/22-10:41:47.797 1038 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000417.log 
+2024/07/22-10:41:49.280 42e0 Level-0 table #434: started
+2024/07/22-10:41:49.299 42e0 Level-0 table #434: 900250 bytes OK
+2024/07/22-10:41:49.301 42e0 Delete type=0 #417
+2024/07/22-10:41:49.303 47ac Manual compaction at level-0 from '\x00\x1d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1d\x00\x00\x05' @ 1628134 : 1
+2024/07/22-10:41:49.303 47ac Compacting 1@0 + 1@1 files
+2024/07/22-10:41:49.327 47ac Generated table #435@0: 9386 keys, 440878 bytes
+2024/07/22-10:41:49.332 47ac Generated table #436@0: 1551 keys, 31705 bytes
+2024/07/22-10:41:49.332 47ac Compacted 1@0 + 1@1 files => 472583 bytes
+2024/07/22-10:41:49.333 47ac compacted to: files[ 0 2 14 0 0 0 0 ]
+2024/07/22-10:41:49.334 47ac Delete type=2 #434
+2024/07/22-10:41:49.335 47ac Manual compaction at level-0 from '\x00\x1d\x00\x00\x05' @ 1628134 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/22-10:41:51.880 47ac Compacting 1@1 + 10@2 files
+2024/07/22-10:41:51.965 47ac Generated table #437@1: 37093 keys, 2214045 bytes
+2024/07/22-10:41:52.012 47ac Generated table #438@1: 2789 keys, 2160173 bytes
+2024/07/22-10:41:52.049 47ac Generated table #439@1: 2520 keys, 2162874 bytes
+2024/07/22-10:41:52.085 47ac Generated table #440@1: 3024 keys, 2161326 bytes
+2024/07/22-10:41:52.133 47ac Generated table #441@1: 6429 keys, 2159018 bytes
+2024/07/22-10:41:52.221 47ac Generated table #442@1: 28102 keys, 2266576 bytes
+2024/07/22-10:41:52.306 47ac Generated table #443@1: 27124 keys, 2271407 bytes
+2024/07/22-10:41:52.348 47ac Generated table #444@1: 12264 keys, 2145715 bytes
+2024/07/22-10:41:52.452 47ac Generated table #445@1: 94989 keys, 2244210 bytes
+2024/07/22-10:41:52.565 47ac Generated table #446@1: 103306 keys, 2254137 bytes
+2024/07/22-10:41:52.570 47ac Generated table #447@1: 994 keys, 21433 bytes
+2024/07/22-10:41:52.570 47ac Compacted 1@1 + 10@2 files => 22060914 bytes
+2024/07/22-10:41:52.572 47ac compacted to: files[ 0 1 15 0 0 0 0 ]
+2024/07/22-10:41:52.572 47ac Delete type=2 #420
+2024/07/22-10:41:52.573 47ac Delete type=2 #421
+2024/07/22-10:41:52.573 47ac Delete type=2 #422
+2024/07/22-10:41:52.573 47ac Delete type=2 #423
+2024/07/22-10:41:52.573 47ac Delete type=2 #424
+2024/07/22-10:41:52.573 47ac Delete type=2 #425
+2024/07/22-10:41:52.573 47ac Delete type=2 #426
+2024/07/22-10:41:52.573 47ac Delete type=2 #427
+2024/07/22-10:41:52.573 47ac Delete type=2 #428
+2024/07/22-10:41:52.573 47ac Delete type=2 #429
+2024/07/22-10:41:52.573 47ac Delete type=2 #430
+2024/07/22-10:41:52.573 47ac Delete type=2 #435
