@@ -1,5 +1,3 @@
-2024/07/23-09:00:24.674 53c Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Local Storage\leveldb since it was missing.
-2024/07/23-09:00:25.096 53c Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Local Storage\leveldb/MANIFEST-000001
-2024/07/23-09:00:25.164 53c Recovering log #4
-2024/07/23-09:00:25.197 53c Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Local Storage\leveldb/000004.log 
-2024/07/23-09:00:25.205 53c Delete type=2 #5
+2024/07/23-16:47:29.500 ba8 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Local Storage\leveldb/MANIFEST-000001
+2024/07/23-16:47:29.520 ba8 Recovering log #3
+2024/07/23-16:47:29.529 ba8 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Local Storage\leveldb/000003.log 

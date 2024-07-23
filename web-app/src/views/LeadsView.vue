@@ -11,8 +11,10 @@
         <table class="leads-table-container">
           <thead>
             <tr>
+              <th>Nombre</th>
+              <th>Email</th>
               <th>Teléfono</th>
-              <th>Estado</th>
+              <th>Estatus</th>
             </tr>
           </thead>
           <tbody>

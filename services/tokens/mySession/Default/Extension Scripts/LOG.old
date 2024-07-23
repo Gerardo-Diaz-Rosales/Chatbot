@@ -1,4 +1,3 @@
-2024/07/23-09:00:23.688 3430 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Scripts since it was missing.
-2024/07/23-09:00:23.715 3430 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Scripts/MANIFEST-000001
-2024/07/23-09:00:23.720 3430 Recovering log #3
-2024/07/23-09:00:23.724 3430 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Scripts/000003.log 
+2024/07/23-16:47:29.365 3ee8 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Scripts/MANIFEST-000001
+2024/07/23-16:47:29.366 3ee8 Recovering log #3
+2024/07/23-16:47:29.367 3ee8 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Scripts/000003.log 

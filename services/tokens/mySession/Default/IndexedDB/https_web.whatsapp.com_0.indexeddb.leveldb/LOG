@@ -1,16 +1,50 @@
-2024/07/23-09:04:06.024 2010 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2024/07/23-09:04:06.066 2010 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/07/23-09:04:06.088 2010 Recovering log #372
-2024/07/23-09:04:06.512 2010 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000372.log 
-2024/07/23-09:04:06.516 2010 Delete type=2 #374
-2024/07/23-09:04:06.517 2010 Delete type=2 #375
-2024/07/23-09:04:06.518 2010 Delete type=2 #376
-2024/07/23-09:04:06.519 2010 Delete type=2 #377
-2024/07/23-09:04:06.519 2010 Delete type=2 #378
-2024/07/23-09:04:06.520 2010 Delete type=2 #379
-2024/07/23-09:04:06.520 2010 Delete type=2 #380
-2024/07/23-09:04:06.521 2010 Delete type=2 #381
-2024/07/23-09:04:09.652 4c84 Level-0 table #374: started
-2024/07/23-09:04:11.251 4c84 Level-0 table #374: 960859 bytes OK
-2024/07/23-09:04:11.263 4c84 Delete type=0 #372
-2024/07/23-09:04:11.279 2954 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/23-16:56:26.966 342c Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/23-16:56:26.968 342c Recovering log #252
+2024/07/23-16:56:26.992 342c Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000252.log 
+2024/07/23-16:56:29.833 3940 Level-0 table #264: started
+2024/07/23-16:56:29.858 3940 Level-0 table #264: 663180 bytes OK
+2024/07/23-16:56:29.860 3940 Delete type=0 #252
+2024/07/23-16:56:29.861 342c Manual compaction at level-0 from '\x00\x1c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1d\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/23-16:56:32.012 1020 Compacting 1@1 + 8@2 files
+2024/07/23-16:56:32.113 1020 Generated table #265@1: 29294 keys, 2213970 bytes
+2024/07/23-16:56:32.184 1020 Generated table #266@1: 2800 keys, 2161043 bytes
+2024/07/23-16:56:32.240 1020 Generated table #267@1: 2689 keys, 2158774 bytes
+2024/07/23-16:56:32.338 1020 Generated table #268@1: 16175 keys, 2197953 bytes
+2024/07/23-16:56:32.455 1020 Generated table #269@1: 28162 keys, 2264260 bytes
+2024/07/23-16:56:32.552 1020 Generated table #270@1: 31263 keys, 2185497 bytes
+2024/07/23-16:56:32.696 1020 Generated table #271@1: 105280 keys, 2257034 bytes
+2024/07/23-16:56:32.743 1020 Generated table #272@1: 33348 keys, 726292 bytes
+2024/07/23-16:56:32.743 1020 Compacted 1@1 + 8@2 files => 16164823 bytes
+2024/07/23-16:56:32.745 1020 compacted to: files[ 0 0 8 0 0 0 0 ]
+2024/07/23-16:56:32.746 1020 Delete type=2 #254
+2024/07/23-16:56:32.746 1020 Delete type=2 #255
+2024/07/23-16:56:32.746 1020 Delete type=2 #256
+2024/07/23-16:56:32.746 1020 Delete type=2 #257
+2024/07/23-16:56:32.746 1020 Delete type=2 #258
+2024/07/23-16:56:32.747 1020 Delete type=2 #259
+2024/07/23-16:56:32.747 1020 Delete type=2 #260
+2024/07/23-16:56:32.747 1020 Delete type=2 #261
+2024/07/23-16:56:32.747 1020 Delete type=2 #264
+2024/07/23-16:59:50.645 342c Level-0 table #274: started
+2024/07/23-16:59:50.689 342c Level-0 table #274: 1129372 bytes OK
+2024/07/23-16:59:50.692 342c Delete type=0 #263
+2024/07/23-16:59:51.035 1020 Compacting 1@1 + 8@2 files
+2024/07/23-16:59:51.141 1020 Generated table #275@1: 30430 keys, 2215944 bytes
+2024/07/23-16:59:51.181 1020 Generated table #276@1: 2809 keys, 2160694 bytes
+2024/07/23-16:59:51.218 1020 Generated table #277@1: 2684 keys, 2158009 bytes
+2024/07/23-16:59:51.285 1020 Generated table #278@1: 15567 keys, 2194993 bytes
+2024/07/23-16:59:51.440 1020 Generated table #279@1: 28262 keys, 2262757 bytes
+2024/07/23-16:59:51.577 1020 Generated table #280@1: 29097 keys, 2187607 bytes
+2024/07/23-16:59:51.803 1020 Generated table #281@1: 105350 keys, 2258368 bytes
+2024/07/23-16:59:51.849 1020 Generated table #282@1: 36430 keys, 794281 bytes
+2024/07/23-16:59:51.849 1020 Compacted 1@1 + 8@2 files => 16232653 bytes
+2024/07/23-16:59:51.850 1020 compacted to: files[ 0 0 8 0 0 0 0 ]
+2024/07/23-16:59:51.851 1020 Delete type=2 #265
+2024/07/23-16:59:51.851 1020 Delete type=2 #266
+2024/07/23-16:59:51.851 1020 Delete type=2 #267
+2024/07/23-16:59:51.851 1020 Delete type=2 #268
+2024/07/23-16:59:51.852 1020 Delete type=2 #269
+2024/07/23-16:59:51.852 1020 Delete type=2 #270
+2024/07/23-16:59:51.852 1020 Delete type=2 #271
+2024/07/23-16:59:51.852 1020 Delete type=2 #272
+2024/07/23-16:59:51.852 1020 Delete type=2 #274
