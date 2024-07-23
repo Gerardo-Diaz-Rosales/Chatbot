@@ -1,40 +1,16 @@
-2024/07/22-10:42:52.140 14a8 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/07/22-10:42:52.141 14a8 Recovering log #433
-2024/07/22-10:42:52.163 14a8 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000433.log 
-2024/07/22-10:42:53.705 2410 Level-0 table #450: started
-2024/07/22-10:42:53.734 2410 Level-0 table #450: 855335 bytes OK
-2024/07/22-10:42:53.736 2410 Delete type=0 #433
-2024/07/22-10:42:53.738 2410 Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1e\x00\x00\x05' @ 1641843 : 1
-2024/07/22-10:42:53.738 2410 Compacting 1@0 + 1@1 files
-2024/07/22-10:42:53.775 2410 Generated table #451@0: 8288 keys, 421334 bytes
-2024/07/22-10:42:53.780 2410 Generated table #452@0: 1554 keys, 31804 bytes
-2024/07/22-10:42:53.780 2410 Compacted 1@0 + 1@1 files => 453138 bytes
-2024/07/22-10:42:53.782 2410 compacted to: files[ 0 2 15 0 0 0 0 ]
-2024/07/22-10:42:53.782 2410 Delete type=2 #450
-2024/07/22-10:42:53.783 2410 Manual compaction at level-0 from '\x00\x1e\x00\x00\x05' @ 1641843 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/07/22-10:42:56.299 e20 Compacting 1@1 + 10@2 files
-2024/07/22-10:42:56.353 e20 Generated table #453@1: 37697 keys, 2216430 bytes
-2024/07/22-10:42:56.404 e20 Generated table #454@1: 2791 keys, 2161247 bytes
-2024/07/22-10:42:56.440 e20 Generated table #455@1: 2520 keys, 2163711 bytes
-2024/07/22-10:42:56.473 e20 Generated table #456@1: 3026 keys, 2162065 bytes
-2024/07/22-10:42:56.506 e20 Generated table #457@1: 6286 keys, 2158034 bytes
-2024/07/22-10:42:56.581 e20 Generated table #458@1: 28122 keys, 2266647 bytes
-2024/07/22-10:42:56.643 e20 Generated table #459@1: 27198 keys, 2271258 bytes
-2024/07/22-10:42:56.685 e20 Generated table #460@1: 12306 keys, 2146371 bytes
-2024/07/22-10:42:56.836 e20 Generated table #461@1: 94407 keys, 2242863 bytes
-2024/07/22-10:42:56.968 e20 Generated table #462@1: 103368 keys, 2253776 bytes
-2024/07/22-10:42:56.971 e20 Generated table #463@1: 553 keys, 12222 bytes
-2024/07/22-10:42:56.971 e20 Compacted 1@1 + 10@2 files => 22054624 bytes
-2024/07/22-10:42:56.972 e20 compacted to: files[ 0 1 16 0 0 0 0 ]
-2024/07/22-10:42:56.973 e20 Delete type=2 #436
-2024/07/22-10:42:56.973 e20 Delete type=2 #437
-2024/07/22-10:42:56.973 e20 Delete type=2 #438
-2024/07/22-10:42:56.973 e20 Delete type=2 #439
-2024/07/22-10:42:56.973 e20 Delete type=2 #440
-2024/07/22-10:42:56.973 e20 Delete type=2 #441
-2024/07/22-10:42:56.974 e20 Delete type=2 #442
-2024/07/22-10:42:56.974 e20 Delete type=2 #443
-2024/07/22-10:42:56.974 e20 Delete type=2 #444
-2024/07/22-10:42:56.974 e20 Delete type=2 #445
-2024/07/22-10:42:56.974 e20 Delete type=2 #446
-2024/07/22-10:42:56.974 e20 Delete type=2 #451
+2024/07/23-09:04:06.024 2010 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2024/07/23-09:04:06.066 2010 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/23-09:04:06.088 2010 Recovering log #372
+2024/07/23-09:04:06.512 2010 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000372.log 
+2024/07/23-09:04:06.516 2010 Delete type=2 #374
+2024/07/23-09:04:06.517 2010 Delete type=2 #375
+2024/07/23-09:04:06.518 2010 Delete type=2 #376
+2024/07/23-09:04:06.519 2010 Delete type=2 #377
+2024/07/23-09:04:06.519 2010 Delete type=2 #378
+2024/07/23-09:04:06.520 2010 Delete type=2 #379
+2024/07/23-09:04:06.520 2010 Delete type=2 #380
+2024/07/23-09:04:06.521 2010 Delete type=2 #381
+2024/07/23-09:04:09.652 4c84 Level-0 table #374: started
+2024/07/23-09:04:11.251 4c84 Level-0 table #374: 960859 bytes OK
+2024/07/23-09:04:11.263 4c84 Delete type=0 #372
+2024/07/23-09:04:11.279 2954 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

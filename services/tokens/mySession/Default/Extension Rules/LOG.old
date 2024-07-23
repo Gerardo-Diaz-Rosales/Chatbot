@@ -1,3 +1,4 @@
-2024/07/22-10:41:46.996 a50 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Rules/MANIFEST-000001
-2024/07/22-10:41:46.997 a50 Recovering log #3
-2024/07/22-10:41:46.998 a50 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Rules/000003.log 
+2024/07/23-09:00:23.596 3e14 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Rules since it was missing.
+2024/07/23-09:00:23.637 3e14 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Rules/MANIFEST-000001
+2024/07/23-09:00:23.642 3e14 Recovering log #3
+2024/07/23-09:00:23.649 3e14 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Extension Rules/000003.log 

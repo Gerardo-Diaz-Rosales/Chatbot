@@ -1,3 +1,4 @@
-2024/07/22-10:41:47.159 1038 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\shared_proto_db\metadata/MANIFEST-000001
-2024/07/22-10:41:47.160 1038 Recovering log #3
-2024/07/22-10:41:47.161 1038 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\shared_proto_db\metadata/000003.log 
+2024/07/23-09:00:24.683 4e20 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\shared_proto_db\metadata since it was missing.
+2024/07/23-09:00:24.708 4e20 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\shared_proto_db\metadata/MANIFEST-000001
+2024/07/23-09:00:24.713 4e20 Recovering log #3
+2024/07/23-09:00:24.717 4e20 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\shared_proto_db\metadata/000003.log 

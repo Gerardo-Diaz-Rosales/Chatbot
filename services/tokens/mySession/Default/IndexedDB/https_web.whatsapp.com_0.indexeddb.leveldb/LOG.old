@@ -1,40 +1,50 @@
-2024/07/22-10:41:47.753 1038 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/07/22-10:41:47.759 1038 Recovering log #417
-2024/07/22-10:41:47.797 1038 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000417.log 
-2024/07/22-10:41:49.280 42e0 Level-0 table #434: started
-2024/07/22-10:41:49.299 42e0 Level-0 table #434: 900250 bytes OK
-2024/07/22-10:41:49.301 42e0 Delete type=0 #417
-2024/07/22-10:41:49.303 47ac Manual compaction at level-0 from '\x00\x1d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1d\x00\x00\x05' @ 1628134 : 1
-2024/07/22-10:41:49.303 47ac Compacting 1@0 + 1@1 files
-2024/07/22-10:41:49.327 47ac Generated table #435@0: 9386 keys, 440878 bytes
-2024/07/22-10:41:49.332 47ac Generated table #436@0: 1551 keys, 31705 bytes
-2024/07/22-10:41:49.332 47ac Compacted 1@0 + 1@1 files => 472583 bytes
-2024/07/22-10:41:49.333 47ac compacted to: files[ 0 2 14 0 0 0 0 ]
-2024/07/22-10:41:49.334 47ac Delete type=2 #434
-2024/07/22-10:41:49.335 47ac Manual compaction at level-0 from '\x00\x1d\x00\x00\x05' @ 1628134 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/07/22-10:41:51.880 47ac Compacting 1@1 + 10@2 files
-2024/07/22-10:41:51.965 47ac Generated table #437@1: 37093 keys, 2214045 bytes
-2024/07/22-10:41:52.012 47ac Generated table #438@1: 2789 keys, 2160173 bytes
-2024/07/22-10:41:52.049 47ac Generated table #439@1: 2520 keys, 2162874 bytes
-2024/07/22-10:41:52.085 47ac Generated table #440@1: 3024 keys, 2161326 bytes
-2024/07/22-10:41:52.133 47ac Generated table #441@1: 6429 keys, 2159018 bytes
-2024/07/22-10:41:52.221 47ac Generated table #442@1: 28102 keys, 2266576 bytes
-2024/07/22-10:41:52.306 47ac Generated table #443@1: 27124 keys, 2271407 bytes
-2024/07/22-10:41:52.348 47ac Generated table #444@1: 12264 keys, 2145715 bytes
-2024/07/22-10:41:52.452 47ac Generated table #445@1: 94989 keys, 2244210 bytes
-2024/07/22-10:41:52.565 47ac Generated table #446@1: 103306 keys, 2254137 bytes
-2024/07/22-10:41:52.570 47ac Generated table #447@1: 994 keys, 21433 bytes
-2024/07/22-10:41:52.570 47ac Compacted 1@1 + 10@2 files => 22060914 bytes
-2024/07/22-10:41:52.572 47ac compacted to: files[ 0 1 15 0 0 0 0 ]
-2024/07/22-10:41:52.572 47ac Delete type=2 #420
-2024/07/22-10:41:52.573 47ac Delete type=2 #421
-2024/07/22-10:41:52.573 47ac Delete type=2 #422
-2024/07/22-10:41:52.573 47ac Delete type=2 #423
-2024/07/22-10:41:52.573 47ac Delete type=2 #424
-2024/07/22-10:41:52.573 47ac Delete type=2 #425
-2024/07/22-10:41:52.573 47ac Delete type=2 #426
-2024/07/22-10:41:52.573 47ac Delete type=2 #427
-2024/07/22-10:41:52.573 47ac Delete type=2 #428
-2024/07/22-10:41:52.573 47ac Delete type=2 #429
-2024/07/22-10:41:52.573 47ac Delete type=2 #430
-2024/07/22-10:41:52.573 47ac Delete type=2 #435
+2024/07/22-14:11:31.393 1d90 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/07/22-14:11:31.395 1d90 Recovering log #351
+2024/07/22-14:11:31.400 1d90 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000351.log 
+2024/07/22-14:11:33.349 1080 Level-0 table #363: started
+2024/07/22-14:11:33.355 1080 Level-0 table #363: 71056 bytes OK
+2024/07/22-14:11:33.357 1080 Delete type=0 #351
+2024/07/22-14:11:33.358 1d90 Manual compaction at level-0 from '\x00!\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00"\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/07/22-14:11:36.076 66c Compacting 1@1 + 8@2 files
+2024/07/22-14:11:36.185 66c Generated table #364@1: 35142 keys, 2221759 bytes
+2024/07/22-14:11:36.248 66c Generated table #365@1: 2835 keys, 2162111 bytes
+2024/07/22-14:11:36.311 66c Generated table #366@1: 2665 keys, 2160183 bytes
+2024/07/22-14:11:36.393 66c Generated table #367@1: 13910 keys, 2185901 bytes
+2024/07/22-14:11:36.521 66c Generated table #368@1: 28068 keys, 2261050 bytes
+2024/07/22-14:11:36.594 66c Generated table #369@1: 13445 keys, 2184104 bytes
+2024/07/22-14:11:36.730 66c Generated table #370@1: 101260 keys, 2250330 bytes
+2024/07/22-14:11:36.889 66c Generated table #371@1: 99491 keys, 2118549 bytes
+2024/07/22-14:11:36.889 66c Compacted 1@1 + 8@2 files => 17543987 bytes
+2024/07/22-14:11:36.890 66c compacted to: files[ 0 0 8 0 0 0 0 ]
+2024/07/22-14:11:36.891 66c Delete type=2 #353
+2024/07/22-14:11:36.891 66c Delete type=2 #354
+2024/07/22-14:11:36.891 66c Delete type=2 #355
+2024/07/22-14:11:36.891 66c Delete type=2 #356
+2024/07/22-14:11:36.891 66c Delete type=2 #357
+2024/07/22-14:11:36.891 66c Delete type=2 #358
+2024/07/22-14:11:36.891 66c Delete type=2 #359
+2024/07/22-14:11:36.892 66c Delete type=2 #360
+2024/07/22-14:11:36.892 66c Delete type=2 #363
+2024/07/22-14:18:56.011 66c Level-0 table #373: started
+2024/07/22-14:18:56.043 66c Level-0 table #373: 1118429 bytes OK
+2024/07/22-14:18:56.046 66c Delete type=0 #362
+2024/07/22-14:19:12.733 66c Compacting 1@1 + 8@2 files
+2024/07/22-14:19:12.815 66c Generated table #374@1: 36420 keys, 2225039 bytes
+2024/07/22-14:19:12.871 66c Generated table #375@1: 2836 keys, 2163084 bytes
+2024/07/22-14:19:12.919 66c Generated table #376@1: 2672 keys, 2160416 bytes
+2024/07/22-14:19:12.987 66c Generated table #377@1: 13545 keys, 2183597 bytes
+2024/07/22-14:19:13.088 66c Generated table #378@1: 27765 keys, 2262780 bytes
+2024/07/22-14:19:13.161 66c Generated table #379@1: 14146 keys, 2185867 bytes
+2024/07/22-14:19:13.279 66c Generated table #380@1: 99390 keys, 2249800 bytes
+2024/07/22-14:19:13.402 66c Generated table #381@1: 101751 keys, 2168102 bytes
+2024/07/22-14:19:13.402 66c Compacted 1@1 + 8@2 files => 17598685 bytes
+2024/07/22-14:19:13.403 66c compacted to: files[ 0 0 8 0 0 0 0 ]
+2024/07/22-14:19:13.404 66c Delete type=2 #364
+2024/07/22-14:19:13.404 66c Delete type=2 #365
+2024/07/22-14:19:13.404 66c Delete type=2 #366
+2024/07/22-14:19:13.404 66c Delete type=2 #367
+2024/07/22-14:19:13.404 66c Delete type=2 #368
+2024/07/22-14:19:13.405 66c Delete type=2 #369
+2024/07/22-14:19:13.405 66c Delete type=2 #370
+2024/07/22-14:19:13.405 66c Delete type=2 #371
+2024/07/22-14:19:13.405 66c Delete type=2 #373

@@ -1,3 +1,4 @@
-2024/07/22-10:41:47.132 2dc8 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Session Storage/MANIFEST-000001
-2024/07/22-10:41:47.133 2dc8 Recovering log #3
-2024/07/22-10:41:47.148 2dc8 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Session Storage/000003.log 
+2024/07/23-09:00:24.666 a34 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Session Storage since it was missing.
+2024/07/23-09:00:25.164 a34 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Session Storage/MANIFEST-000001
+2024/07/23-09:00:25.198 a34 Recovering log #3
+2024/07/23-09:00:25.232 a34 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Session Storage/000003.log 

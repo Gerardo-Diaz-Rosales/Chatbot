@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const botRoutes = require('./src/routes/messageRoutes');
 const cors = require('cors');
 
-const app = express(); // Mover esta línea arriba
+const app = express();
 const port = 3000;
 
 // Middleware para habilitar CORS
-app.use(cors()); // Ahora está correctamente definido
+app.use(cors());
 
 // Middleware para parsear JSON
 app.use(bodyParser.json());

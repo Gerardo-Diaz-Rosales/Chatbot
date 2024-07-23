@@ -5,34 +5,22 @@
     </div>
 
     <div class="home-content">
-      <h1>Posibles clientes</h1>
-      <button @click="crearNuevoCliente" class="leads-add-btn">Crear un posible cliente</button>
+      <h1>Usuarios Nuevos</h1>
+      <button @click="crearNuevoUsuario" class="leads-add-btn">Crear un nuevo usuario</button>
       <div class="leads-table">
         <table class="leads-table-container">
           <thead>
             <tr>
-              <th>Nombre</th>
-              <th>Estado</th>
               <th>Teléfono</th>
-              <th>Correo</th>
-              <th>Usuario Asignado</th>
-              <th>Fecha de Asignación</th>
-              <th>Departamento</th>
+              <th>Estado</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(cliente, index) in posiblesClientes" :key="index" @click="verDetalles(cliente.potential_client_id)">
-              <td>{{ cliente.name }}</td>
-              <td>{{ cliente.status }}</td>
-              <td>{{ cliente.phone_number }}</td>
-              <td>{{ cliente.email }}</td>
+            <tr v-for="(usuario, index) in usuariosNuevos" :key="index">
               <td>
-                <select v-model="cliente.assigned_user_id" class="form-select">
-                  <option v-for="usuario in usuarios" :key="usuario" :value="usuario">{{ usuario }}</option>
-                </select>
+                <router-link :to="`/posible-cliente/${usuario.user_id}`">{{ usuario.phone_number }}</router-link>
               </td>
-              <td>{{ cliente.assignment_date }}</td>
-              <td>{{ cliente.department }}</td>
+              <td>{{ usuario.status }}</td>
             </tr>
           </tbody>
         </table>
@@ -44,40 +32,27 @@
 <script setup>
 import Sidebar from '../components/SideBar.vue';
 import { ref, onMounted } from 'vue';
-import { useRouter } from 'vue-router';
 import axios from 'axios';
 
-const router = useRouter(); // Importar el enrutador
+const usuariosNuevos = ref([]);
 
-const posiblesClientes = ref([]);
-const usuarios = ref(['Usuario 1', 'Usuario 2', 'Usuario 3']); // Actualiza esto según los datos reales
-
-const verDetalles = (id) => {
-  router.push(`/posible-cliente/${id}`);
-};
-
-const fetchPotentialClients = async () => {
+const fetchNewUsers = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/potential-clients');
-    posiblesClientes.value = response.data; // No necesitas mapear aquí si los nombres son correctos
+    const response = await axios.get('http://localhost:3000/api/new-users');
+    usuariosNuevos.value = response.data;
   } catch (error) {
-    console.error('Error al obtener posibles clientes:', error.response ? error.response.data : error.message);
+    console.error('Error al obtener usuarios nuevos:', error.response ? error.response.data : error.message);
   }
 };
 
 onMounted(() => {
-  fetchPotentialClients();
+  fetchNewUsers();
 });
 
-const crearNuevoCliente = () => {
-  posiblesClientes.value.push({
-    nombre: 'Nuevo Cliente',
-    estado: 'Nuevo',
-    telefono: '',
-    correo: '',
-    usuarioAsignado: 'Usuario 1',
-    fechaAsignacion: new Date().toISOString().split('T')[0],
-    departamento: 'Ventas'
+const crearNuevoUsuario = () => {
+  usuariosNuevos.value.push({
+    phone_number: 'Nuevo Número',
+    status: 'new'
   });
 };
 </script>
@@ -122,12 +97,6 @@ const crearNuevoCliente = () => {
   background-color: #f2f2f2; /* Fondo gris claro para encabezados */
   color: #555; /* Color de texto gris medio */
   padding: 12px;
-}
-
-.leads-table-container td select {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
 }
 
 .leads-add-btn {

@@ -1,3 +1,4 @@
-2024/07/22-10:41:47.001 1038 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Sync Data\LevelDB/MANIFEST-000001
-2024/07/22-10:41:47.002 1038 Recovering log #3
-2024/07/22-10:41:47.004 1038 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Sync Data\LevelDB/000003.log 
+2024/07/23-09:00:23.440 3c4 Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Sync Data\LevelDB since it was missing.
+2024/07/23-09:00:23.739 3c4 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Sync Data\LevelDB/MANIFEST-000001
+2024/07/23-09:00:23.744 3c4 Recovering log #3
+2024/07/23-09:00:23.752 3c4 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Sync Data\LevelDB/000003.log 
