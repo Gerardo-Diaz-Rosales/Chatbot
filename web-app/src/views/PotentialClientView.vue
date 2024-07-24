@@ -71,20 +71,20 @@ const fetchClientConversations = async (clientId) => {
 };
 
 const enviarMensaje = async () => {
-    if (cliente.value && mensaje.value.trim()) {
-        try {
-            const formattedNumber = `${cliente.value.phone_number}@c.us`; // Asegúrate de que el número esté en el formato correcto
-            await axios.post('http://localhost:3000/api/send-message', {
-                number: formattedNumber,
-                message: mensaje.value,
-            });
-            mensaje.value = '';
-        } catch (error) {
-            console.error('Error al enviar mensaje:', error.response ? error.response.data : error.message);
-        }
+  try {
+    const clientId = route.params.id;
+    const response = await axios.post(`http://localhost:3000/api/client/${clientId}/send`, { message: mensaje.value });
+    alert('Mensaje enviado correctamente');
+    mensaje.value = '';
+    await fetchClientConversations(clientId);
+  } catch (error) {
+    console.error('Error al enviar mensaje:', error.response ? error.response.data : error.message);
+    if (error.response && error.response.status === 503) {
+      alert('El bot está inicializándose. Por favor, espera unos segundos y vuelve a intentarlo.');
     } else {
-        console.error('Cliente no disponible o mensaje vacío.');
+      alert(`Error al enviar mensaje: ${error.response ? error.response.data : error.message}`);
     }
+  }
 };
 
 

@@ -3,6 +3,22 @@ const createConnection = require('./db');
 require('dotenv').config();
 
 let client;
+let botReady = false;
+
+const botReadyPromise = new Promise((resolve) => {
+    const createBot = async () => {
+        try {
+            client = await venom.create({ session: 'mySession', headless: false, multidevice: true });
+            console.log('Venom bot conectado!');
+            botReady = true;
+            resolve(client);
+        } catch (error) {
+            console.error('Error al crear el bot:', error);
+        }
+    };
+
+    createBot();
+});
 
 // Función para obtener o crear una conversación
 const getOrCreateConversation = async (clientId) => {
@@ -101,12 +117,8 @@ const updateClientState = async (clientId, state) => {
     connection.end();
 };
 
-// Crear el cliente Venom
-const createBot = async () => {
-    client = await venom.create({ session: 'mySession', headless: false, multidevice: true });
-    console.log('Venom bot conectado!');
-
-    // En el evento onMessage
+// En el evento onMessage
+botReadyPromise.then(client => {
     client.onMessage(async (message) => {
         const lowerCaseMessage = message.body.toLowerCase();
         const { id: clientId, state: clientState } = await getClientIdByPhoneNumber(message.from);
@@ -149,6 +161,10 @@ const createBot = async () => {
             await saveMessage(conversationId, clientId, message.body, 'cliente');
         }
     });
-};
+});
 
-createBot();
+module.exports = {
+    getClient: () => client,
+    botReadyPromise,
+    isBotReady: () => botReady
+};
