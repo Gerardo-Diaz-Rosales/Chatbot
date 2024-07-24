@@ -5,8 +5,7 @@
     </div>
 
     <div class="home-content">
-      <h1>Usuarios Nuevos</h1>
-      <button @click="crearNuevoUsuario" class="leads-add-btn">Crear un nuevo usuario</button>
+      <h1>Clientes Potenciales</h1>
       <div class="leads-table">
         <table class="leads-table-container">
           <thead>
@@ -18,11 +17,15 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(usuario, index) in usuariosNuevos" :key="index">
+            <tr v-for="(cliente, index) in clientesPotenciales" :key="index">
               <td>
-                <router-link :to="`/posible-cliente/${usuario.user_id}`">{{ usuario.phone_number }}</router-link>
+                <router-link :to="{ name: 'posible-cliente', params: { id: cliente.id } }">
+                  {{ cliente.name }}
+                </router-link>
               </td>
-              <td>{{ usuario.status }}</td>
+              <td>{{ cliente.email }}</td>
+              <td>{{ limpiarNumeroTelefono(cliente.phone_number) }}</td>
+              <td>{{ cliente.is_cliente ? 'Cliente' : 'Potencial Cliente' }}</td>
             </tr>
           </tbody>
         </table>
@@ -36,27 +39,24 @@ import Sidebar from '../components/SideBar.vue';
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
-const usuariosNuevos = ref([]);
+const clientesPotenciales = ref([]);
 
-const fetchNewUsers = async () => {
+const fetchPotentialClients = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/new-users');
-    usuariosNuevos.value = response.data;
+    const response = await axios.get('http://localhost:3000/api/potential-clients');
+    clientesPotenciales.value = response.data;
   } catch (error) {
-    console.error('Error al obtener usuarios nuevos:', error.response ? error.response.data : error.message);
+    console.error('Error al obtener clientes potenciales:', error.response ? error.response.data : error.message);
   }
 };
 
-onMounted(() => {
-  fetchNewUsers();
-});
-
-const crearNuevoUsuario = () => {
-  usuariosNuevos.value.push({
-    phone_number: 'Nuevo Número',
-    status: 'new'
-  });
+const limpiarNumeroTelefono = (numero) => {
+  return numero.replace('@c.us', '');
 };
+
+onMounted(() => {
+  fetchPotentialClients();
+});
 </script>
 
 <style scoped>
@@ -99,25 +99,5 @@ const crearNuevoUsuario = () => {
   background-color: #f2f2f2; /* Fondo gris claro para encabezados */
   color: #555; /* Color de texto gris medio */
   padding: 12px;
-}
-
-.leads-add-btn {
-  background-color: #28a745; /* Color verde */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-bottom: 20px;
-  margin-left: 80%;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-right: 20px; /* Margen derecho para separación */
-}
-
-.leads-add-btn:hover {
-  background-color: #218838; /* Cambio de tono en hover */
 }
 </style>

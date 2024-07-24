@@ -1,3 +1,2 @@
-2024/07/23-16:56:26.077 4294 Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Service Worker\Database/MANIFEST-000001
-2024/07/23-16:56:26.089 4294 Recovering log #3
-2024/07/23-16:56:26.090 4294 Reusing old log C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Service Worker\Database/000003.log 
+2024/07/23-19:03:04.729 21ec Creating DB C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Service Worker\Database since it was missing.
+2024/07/23-19:03:04.750 21ec Reusing MANIFEST C:\Users\Abalo\OneDrive\Desktop\Grupo SAOM\services\tokens\mySession\Default\Service Worker\Database/MANIFEST-000001

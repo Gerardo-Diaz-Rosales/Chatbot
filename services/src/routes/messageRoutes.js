@@ -3,33 +3,33 @@ const router = express.Router();
 const { getClient } = require('../bot');
 const createConnection = require('../db');
 
-// Ruta para obtener detalles de un usuario por ID
-router.get('/users/:id', async (req, res) => {
-    const userId = req.params.id;
-    const query = 'SELECT * FROM users WHERE id = ?';
+// Ruta para obtener detalles de un cliente por ID
+router.get('/client/:id', async (req, res) => {
+    const clientId = req.params.id;
+    const query = 'SELECT * FROM clients WHERE id = ?';
     let connection;
     try {
         connection = await createConnection();
-        const [results] = await connection.execute(query, [userId]);
+        const [results] = await connection.execute(query, [clientId]);
         if (results.length === 0) {
-            return res.status(404).send('Usuario no encontrado');
+            return res.status(404).send('Cliente no encontrado');
         }
         res.json(results[0]);
     } catch (error) {
-        return res.status(500).send('Error al obtener detalles del usuario: ' + error.message);
+        return res.status(500).send('Error al obtener detalles del cliente: ' + error.message);
     } finally {
         if (connection) connection.end();
     }
 });
 
-// Ruta para obtener historial de conversaciones de un usuario
-router.get('/conversations/user/:userId', async (req, res) => {
-    const userId = req.params.userId;
-    const query = 'SELECT * FROM conversations WHERE user_id = ?';
+// Ruta para obtener historial de conversaciones de un cliente por ID
+router.get('/client/:id/conversations', async (req, res) => {
+    const clientId = req.params.id;
+    const query = 'SELECT * FROM conversations WHERE client_id = ?';
     let connection;
     try {
         connection = await createConnection();
-        const [results] = await connection.execute(query, [userId]);
+        const [results] = await connection.execute(query, [clientId]);
         res.json(results);
     } catch (error) {
         return res.status(500).send('Error al obtener historial de conversaciones: ' + error.message);
@@ -39,7 +39,7 @@ router.get('/conversations/user/:userId', async (req, res) => {
 });
 
 // Ruta para obtener mensajes de una conversación específica
-router.get('/messages/conversation/:conversationId', async (req, res) => {
+router.get('/conversation/:conversationId/messages', async (req, res) => {
     const conversationId = req.params.conversationId;
     const query = 'SELECT * FROM messages WHERE conversation_id = ?';
     let connection;
@@ -49,21 +49,6 @@ router.get('/messages/conversation/:conversationId', async (req, res) => {
         res.json(results);
     } catch (error) {
         return res.status(500).send('Error al obtener mensajes de la conversación: ' + error.message);
-    } finally {
-        if (connection) connection.end();
-    }
-});
-
-
-router.get('/new-users', async (req, res) => {
-    const query = 'SELECT * FROM users WHERE status = "new"';
-    let connection;
-    try {
-        connection = await createConnection();
-        const [results] = await connection.execute(query);
-        res.json(results);
-    } catch (error) {
-        return res.status(500).send('Error al obtener usuarios nuevos: ' + error.message);
     } finally {
         if (connection) connection.end();
     }
@@ -90,6 +75,27 @@ router.post('/send-message', async (req, res) => {
         console.error('Error al enviar mensaje: ', error);
         res.status(500).send('Error al enviar mensaje: ' + error.message);
     }
+});
+
+
+// Ruta para obtener clientes potenciales (is_cliente = 0)
+router.get('/potential-clients', async (req, res) => {
+    const query = 'SELECT * FROM clients WHERE is_cliente = 0';
+    let connection;
+    try {
+        connection = await createConnection();
+        const [results] = await connection.execute(query);
+        res.json(results);
+    } catch (error) {
+        return res.status(500).send('Error al obtener clientes potenciales: ' + error.message);
+    } finally {
+        if (connection) connection.end();
+    }
+});
+
+// Ruta de prueba
+router.get('/test', (req, res) => {
+    res.send('Ruta de prueba funcionando');
 });
 
 module.exports = router;
